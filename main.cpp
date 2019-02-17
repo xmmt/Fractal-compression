@@ -235,7 +235,7 @@ int main()
 {
 	CImg < uint8_t > i1("pic.bmp");
 	picture p1(i1);
-	auto d = fcoder::encode(p1, 4, 1);
+	auto d = fcoder::encode(p1, 4, 4);
 	ofstream out("out", ios::binary);
 	out << d;
 	out.close();
